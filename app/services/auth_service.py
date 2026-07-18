@@ -78,17 +78,7 @@ class AuthService:
             logger.warning( f"Login failed. email={email}")
 
             raise InvalidCredentials( "Invalid email or password"  )
-        print("USERNAME:", form_data.username)
-        print("PASSWORD:", form_data.password)
-        print("HASH:", user.password_hash)
-        print(
-    "VERIFY:",
-    verify_password(
-        form_data.password,
-        user.password_hash,
-    ),
-)
-
+    
         if not verify_password(
             form_data.password,
             user.password_hash,):
