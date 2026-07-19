@@ -152,11 +152,11 @@ http://localhost:8000/redoc
 
 ## 🚀 Future Enhancements
 
-AI-powered Resume Screening
-Candidate Recommendation
-Semantic Search
-Background Processing
-Email Notifications
+- AI-powered Resume Screening
+- Candidate Recommendation
+- Semantic Search
+- Background Processing
+- Email Notifications
 
 
 ---
@@ -652,10 +652,11 @@ This backend includes practical implementation of:
 <fghodsi92@gmail.com>
 
 💼 **LinkedIn**  
-https://www.linkedin.com/in/fatodsi/
+<https://www.linkedin.com/in/fatodsi/>
 
 💻 **GitHub**  
-https://github.com/fatemeh-ghodsi
+<https://github.com/fatemeh-ghodsi>
+
 ---
 
 ⭐ If you found this project interesting, consider giving it a star.
