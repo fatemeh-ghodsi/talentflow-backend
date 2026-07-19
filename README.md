@@ -1,27 +1,3 @@
-<p align="center">
-  <img src="docs/images/talentflow-banner.png" width="100%" alt="TalentFlow Backend">
-</p>
-
-<h1 align="center">
-TalentFlow Backend
-</h1>
-
-<p align="center">
-
-Production-Ready Recruitment Platform Backend built with FastAPI, PostgreSQL and Async SQLAlchemy
-
-</p>
-
-<p align="center">
-
-![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.116-009688?logo=fastapi)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue?logo=postgresql)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-Async-red)
-![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)
-![License](https://img.shields.io/badge/License-MIT-success)
-
-</p>
 
 ---
 ## ⭐ Key Highlights
