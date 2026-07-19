@@ -1,210 +1,515 @@
-# TalentFlow Backend
+<p align="center">
+  <img src="docs/images/talentflow-banner.png" width="100%" alt="TalentFlow Backend">
+</p>
 
-A production-style backend API for a modern recruitment and talent management platform.
+<h1 align="center">
+TalentFlow Backend
+</h1>
 
-TalentFlow is a scalable REST API designed to support the core workflows of a recruitment platform, including authentication, company management, candidate profiles, job publishing, and application tracking.
+<p align="center">
 
-The project follows modern backend development practices with a layered architecture, asynchronous database operations, role-based authorization, and clean separation of concerns.
+Production-Ready Recruitment Platform Backend built with FastAPI, PostgreSQL and Async SQLAlchemy
+
+</p>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.116-009688?logo=fastapi)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue?logo=postgresql)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-Async-red)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)
+![License](https://img.shields.io/badge/License-MIT-success)
+
+</p>
+
+---
+## ⭐ Key Highlights
+
+- Production-ready FastAPI backend
+- JWT Authentication & RBAC
+- Async SQLAlchemy + PostgreSQL
+- Dockerized Development
+- Clean Architecture
+- Enterprise-ready Project Structure
+
+
+# 🚀 Overview
+TalentFlow Backend is a production-ready backend platform for recruitment workflows, designed with modern software engineering principles including clean architecture, asynchronous programming, layered application design, and secure REST API development.
 
 ---
 
-# Key Features
+# 🎯Design Principles
 
-## Authentication & Security
+TalentFlow was designed as a scalable recruitment platform backend following enterprise software engineering practices.
 
-* JWT Authentication
-* Access & Refresh Tokens
-* Secure Password Hashing (bcrypt)
-* Token Rotation
-* Role-Based Authorization
-* Protected API Endpoints
+The project emphasizes:
+
+- Clean Architecture
+- Asynchronous Programming
+- Layered Design
+- RESTful API Development
+- Secure Authentication & Authorization
+- Maintainable and Scalable Codebase
+# ✨ Features
+
+TalentFlow Backend provides a complete backend foundation for a modern recruitment platform.
+
+## 🔐 Authentication & Security
+
+- JWT Authentication
+- Secure Password Hashing (bcrypt)
+- Access & Refresh Token Support
+- OAuth2 Password Flow
+- Protected API Endpoints
+- Authentication Middleware
+
+---
+## 👥 User Management
+
+- Secure User Registration
+- JWT-based Authentication
+- Role-Based Access Control (RBAC)
+- User Profile Management
+- Profile Updates
+- Account Status Management
 
 ---
 
-## User Management
+## 🛡 Role-Based Access Control (RBAC)
 
-* User Registration
-* Authentication
-* Profile Management
-* Account Update
-* Account Removal
+TalentFlow supports multiple user roles.
 
----
+- Administrator
+- Recruiter
+- Candidate
 
-## Company Management
-
-* Company Registration
-* Company Profile
-* Job Publishing
-* Job Management
+Each role has isolated permissions to ensure secure access to system resources.
 
 ---
 
-## Candidate Management
+## 🏢 Company Management
 
-* Professional Profile
-* Resume Upload
-* Profile Photo Upload
-* Education Records
-* Work Experience
-* Technical Skills
+- Company Profile
+- Company Information
+- Company Logo Upload
+- Recruiter Assignment
 
 ---
 
-## Recruitment Workflow
+## 📄 Resume Management
 
-* Publish Jobs
-* Browse Available Jobs
-* Submit Applications
-* Track Application Status
-* Review Candidates
+Candidates can upload and manage resumes.
 
----
+Supported features include:
 
-## Administration
-
-* User Management
-* Skill Management
-* System Administration
+- Resume Upload
+- File Validation
+- File Storage
+- Download Support
 
 ---
 
-# Technology Stack
+## 💼 Job Management
 
-| Category           | Technology             |
-| ------------------ | ---------------------- |
-| Language           | Python 3.13            |
-| Framework          | FastAPI                |
-| ORM                | SQLAlchemy 2.0 (Async) |
-| Database           | PostgreSQL             |
-| Driver             | AsyncPG                |
-| Validation         | Pydantic v2            |
-| Authentication     | JWT                    |
-| Password Hashing   | Passlib (bcrypt)       |
-| Database Migration | Alembic                |
-| API Documentation  | Swagger / ReDoc        |
-| Containerization   | Docker                 |
+Recruiters can manage job postings through REST APIs.
 
----
-# Architecture
+Features include:
 
-The application follows a layered architecture that separates business logic from infrastructure and persistence.
-
-## System Architecture
-
-![System Architecture](docs/images/architecture.png)
-
-```text
-Client
-   │
-   ▼
-API Routers
-   │
-   ▼
-Service Layer
-   │
-   ▼
-Repository Layer
-   │
-   ▼
-Database
-
-## API Layer
-
-Responsible for:
-
-* Request validation
-* Dependency injection
-* HTTP responses
-* Authentication
+- Create Jobs
+- Update Jobs
+- Delete Jobs
+- List Available Jobs
+- Job Details
 
 ---
 
-## Service Layer
+## ⚡ Backend Engineering
 
-Responsible for:
+The project is designed using modern backend development practices.
 
-* Business rules
-* Authorization
-* Workflow orchestration
-* Data validation
-
----
-
-## Repository Layer
-
-Responsible for:
-
-* Database access
-* CRUD operations
-* Query abstraction
+- Async FastAPI
+- Async SQLAlchemy
+- Repository Pattern
+- Service Layer
+- Dependency Injection
+- Pydantic Validation
+- Clean Architecture
 
 ---
 
-## Database Layer
+## 🗄 Database
 
-* PostgreSQL
-* SQLAlchemy 2.0 Async
-* Alembic Migrations
+- PostgreSQL
+- AsyncPG
+- Alembic Migration
+- Relationship Mapping
+- Transaction Management
 
 ---
 
-# Project Structure
+## 🐳 DevOps
 
-```text
-talentflow_backend/
+- Docker Support
+- Docker Compose
+- Environment Configuration
+- Production-ready Structure
 
+---
+
+## 📚 API Documentation
+
+Interactive API documentation is automatically generated using Swagger UI.
+
+```
+http://localhost:8000/docs
+```
+
+ReDoc documentation is also available.
+
+```
+http://localhost:8000/redoc
+```
+
+---
+
+## 🚀 Future Enhancements
+
+AI-powered Resume Screening
+Candidate Recommendation
+Semantic Search
+Background Processing
+Email Notifications
+
+
+---
+
+# 🏗 Architecture
+
+TalentFlow Backend follows a layered architecture inspired by production-ready backend systems.
+
+The application separates business logic, data access, API endpoints, and database models into independent layers to improve scalability, maintainability, and testability.
+
+```
+                Client
+                   │
+            HTTP Request
+                   │
+            FastAPI Router
+                   │
+              Service Layer
+                   │
+          Repository Layer
+                   │
+        SQLAlchemy Async ORM
+                   │
+             PostgreSQL
+```
+
+## Architecture Principles
+
+The project follows several modern backend engineering principles:
+
+- Separation of Concerns
+- Dependency Injection
+- Repository Pattern
+- Service Layer Pattern
+- Asynchronous Programming
+- Data Validation using Pydantic
+- Database Abstraction
+- Clean Project Structure
+
+---
+
+# 📂 Project Structure
+
+```
+TalentFlow Backend
+│
 ├── alembic/
+│   ├── versions/
+│   └── env.py
 │
 ├── app/
-│   ├── auth/
-│   ├── common/
+│   │
+│   ├── api/
+│   │   └── routers/
+│   │
 │   ├── core/
-│   ├── exceptions/
+│   │   ├── config.py
+│   │   ├── security.py
+│   │   └── dependencies.py
+│   │
+│   ├── database/
+│   │   ├── session.py
+│   │   └── base.py
+│   │
 │   ├── models/
+│   │
 │   ├── repositories/
-│   ├── routers/
+│   │
 │   ├── schemas/
-│   ├── seeds/
+│   │
 │   ├── services/
+│   │
 │   ├── utils/
+│   │
 │   └── main.py
 │
+├── docs/
+│   └── images/
+│
 ├── uploads/
+│
 ├── docker-compose.yaml
 ├── requirements.txt
-├── .env.example
 └── README.md
 ```
 
 ---
 
-# Core Modules
+# 🔄 Request Flow
 
-* Authentication
-* Users
-* Profiles
-* Companies
-* Jobs
-* Applications
-* Skills
-* User Skills
-* Education
-* Experience
-* File Management
+Every request follows the same lifecycle.
+
+```
+Client
+
+↓
+
+API Router
+
+↓
+
+Business Service
+
+↓
+
+Repository
+
+↓
+
+Database
+
+↓
+
+Repository
+
+↓
+
+Service
+
+↓
+
+JSON Response
+```
+
+This approach keeps the application modular, testable, and easy to extend.
 
 ---
 
-# Security
+# 🧩 Why this Architecture?
 
-The API implements multiple security mechanisms including:
+Instead of placing all business logic directly inside API routes, TalentFlow separates responsibilities into dedicated layers.
 
-* JWT Authentication
-* Refresh Token Support
-* Password Hashing
-* Role-Based Authorization
-* Secure Dependency Injection
-* ORM-based SQL Injection Protection
+This design provides several advantages:
+
+- Easier maintenance
+- Better code readability
+- Reusable business logic
+- Cleaner API endpoints
+- Simplified testing
+- Better scalability
+- Easier collaboration in larger development teams
+
+The same architecture is commonly used in enterprise backend applications built with FastAPI and other modern Python frameworks.
+---
+
+# 🗄 Database Design
+
+TalentFlow uses PostgreSQL as the primary relational database.
+
+The database schema has been designed to ensure data consistency, scalability, and maintainability while supporting future feature expansion.
+
+The project uses **SQLAlchemy Async ORM** together with **Alembic** for schema migration and version control.
+
+---
+
+# Core Entities
+
+The current database contains the following main entities.
+
+| Entity | Description |
+|---------|-------------|
+| User | Stores authentication and account information |
+| Role | Defines application permissions |
+| Company | Company profile information |
+| Candidate | Candidate profile |
+| Resume | Candidate uploaded resumes |
+| Job | Job postings |
+| Application | Candidate job applications |
+
+---
+
+# Relationships
+
+The project uses relational database modeling with SQLAlchemy ORM.
+
+Examples include:
+
+- One Company → Many Jobs
+- One Candidate → Many Applications
+- One User → One Role
+- One Candidate → Multiple Resume Files
+
+The database design follows normalization principles to reduce redundancy while maintaining performance.
+
+---
+
+# 🔐 Authentication Flow
+
+TalentFlow implements secure JWT authentication.
+
+Authentication process
+
+```
+
+User Login
+
+↓
+
+Verify Credentials
+
+↓
+
+Generate JWT Token
+
+↓
+
+Return Access Token
+
+↓
+
+Authenticated Requests
+
+↓
+
+Protected Endpoints
+
+```
+
+Security features
+
+- Password hashing using bcrypt
+- JWT Access Tokens
+- OAuth2 Password Flow
+- Protected Routes
+- Role Validation
+
+---
+
+# 👥 Authorization (RBAC)
+
+TalentFlow uses Role-Based Access Control (RBAC).
+
+Each authenticated user is assigned a role.
+
+Current roles
+
+- Administrator
+- Recruiter
+- Candidate
+
+Each role has its own permissions and API access.
+
+This architecture makes it easy to introduce new roles without modifying existing business logic.
+
+---
+
+# 📁 Resume Upload
+
+TalentFlow supports secure resume management.
+
+Features
+
+- Resume Upload
+- File Validation
+- Safe File Naming
+- File Storage
+- Resume Download
+
+Uploaded files are managed separately from business logic to simplify future migration to cloud storage providers such as AWS S3 or Azure Blob Storage.
+
+---
+
+# 📡 REST API
+
+The backend exposes RESTful APIs following common HTTP standards.
+
+Example endpoints
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | /auth/login | User Login |
+| POST | /auth/register | Register User |
+| GET | /users/me | Current User |
+| GET | /jobs | List Jobs |
+| POST | /jobs | Create Job |
+| POST | /upload | Upload Resume |
+
+Interactive API documentation is available through Swagger UI.
+
+```
+
+http://localhost:8000/docs
+
+```
+
+---
+
+# ⚙ Environment Configuration
+
+The application supports multiple environments using environment variables.
+
+Configuration includes
+
+- Database Connection
+- JWT Secret Key
+- Token Expiration
+- Upload Directory
+- Docker Configuration
+
+Sensitive values are never stored inside the source code.
+
+Environment variables are managed through
+
+```
+
+.env
+
+```
+
+and
+
+```
+
+.env.example
+
+```
+
+to simplify deployment.
+---
+
+# 🚀 Getting Started
+
+## Prerequisites
+
+Before running the project, make sure the following tools are installed.
+
+- Python 3.12+
+- PostgreSQL
+- Docker & Docker Compose
+- Git
 
 ---
 
@@ -213,7 +518,7 @@ The API implements multiple security mechanisms including:
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/talentflow-backend.git
+git clone https://github.com/fatemeh-ghodsi/talentflow-backend.git
 ```
 
 Navigate to the project
@@ -236,6 +541,12 @@ Windows
 .venv\Scripts\activate
 ```
 
+Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
 Install dependencies
 
 ```bash
@@ -244,55 +555,52 @@ pip install -r requirements.txt
 
 ---
 
-# Configuration
+# Environment Variables
 
-Create a `.env` file using `.env.example`.
+Create a `.env` file in the project root.
 
-Example configuration:
+Example:
 
 ```env
-APP_NAME=TalentFlow
-
-DATABASE_URL=
-
-SECRET_KEY=
-
+DATABASE_URL=postgresql+asyncpg://postgres:password@localhost/talentflow
+SECRET_KEY=your_secret_key
 ALGORITHM=HS256
-
 ACCESS_TOKEN_EXPIRE_MINUTES=30
-
-REFRESH_TOKEN_EXPIRE_DAYS=7
-
-UPLOAD_DIR=uploads
 ```
 
 ---
 
-# Database
+# Database Migration
 
-Start PostgreSQL
-
-```bash
-docker compose up -d
-```
-
-Run database migrations
+Run Alembic migrations
 
 ```bash
 alembic upgrade head
 ```
 
-Seed initial system data
+Create a new migration
 
 ```bash
-python -m app.seeds.seed
+alembic revision --autogenerate -m "message"
 ```
 
 ---
 
-# API Documentation
+# Running the Project
 
-Swagger UI
+Development server
+
+```bash
+uvicorn app.main:app --reload
+```
+
+Application will be available at
+
+```
+http://localhost:8000
+```
+
+Swagger
 
 ```
 http://localhost:8000/docs
@@ -306,47 +614,86 @@ http://localhost:8000/redoc
 
 ---
 
-# Current Capabilities
+# Docker
 
-* JWT Authentication
-* Refresh Tokens
-* Role-Based Authorization
-* Async Database Operations
-* Company Management
-* Candidate Profiles
-* Job Management
-* Application Management
-* File Upload
-* Alembic Database Migrations
-* Seed Data
-* Layered Architecture
-* Repository Pattern
-* Service Layer
+Start services
+
+```bash
+docker compose up --build
+```
+
+Stop services
+
+```bash
+docker compose down
+```
 
 ---
+
+# Development Practices
+
+The project follows modern backend engineering practices.
+
+- Clean Architecture
+- Repository Pattern
+- Service Layer
+- Dependency Injection
+- Async Programming
+- REST API Design
+- Environment-based Configuration
+- Database Migration with Alembic
+
+---
+
+
 
 # Roadmap
 
-Planned enhancements include:
+### Backend
 
-* Email Verification
-* Password Recovery
-* Background Jobs
-* Redis Integration
-* Notification System
-* Full-text Search
-* Audit Logging
-* Automated Testing
-* CI/CD Pipeline
-* Cloud Deployment
-* Kubernetes Support
+- ✅ Authentication
+- ✅ User Management
+- ✅ Resume Upload
+- ✅ Docker Deployment
+
+### AI Integration
+
+- Resume Parsing
+- Resume Ranking
+- Semantic Candidate Search
+- Job Recommendation
+- AI Interview Assistant
+- Skill Matching using NLP
 
 ---
 
-# Author
+# Engineering Highlights
 
-**Fatemeh**
+This project demonstrates practical backend engineering experience with:
 
-Backend Developer
+- FastAPI
+- Async SQLAlchemy
+- PostgreSQL
+- JWT Authentication
+- Docker
+- Alembic
+- RESTful APIs
+- Clean Architecture
+- Layered Design
 
-Specialized in Python, FastAPI, PostgreSQL, SQLAlchemy and scalable backend architecture.
+# Contact
+
+**Fatemeh Ghodsi**
+
+   
+[Email]fghodsi92@gmail.com
+
+
+[LinkedIn]https://www.linkedin.com/in/fatemehghodsi
+
+ 
+[GitHub]https://github.com/fatemeh-ghodsi
+
+---
+
+⭐ If you found this project interesting, consider giving it a star.
