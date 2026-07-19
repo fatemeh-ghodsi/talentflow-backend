@@ -1,4 +1,4 @@
-
+> Enterprise-grade recruitment platform backend built with FastAPI, PostgreSQL, Async SQLAlchemy, Docker, and modern backend engineering practices.
 ---
 ## ⭐ Key Highlights
 
@@ -15,7 +15,7 @@ TalentFlow Backend is a production-ready backend platform for recruitment workfl
 
 ---
 
-# 🎯Design Principles
+# 🎯 Design Principles
 
 TalentFlow was designed as a scalable recruitment platform backend following enterprise software engineering practices.
 
@@ -27,6 +27,8 @@ The project emphasizes:
 - RESTful API Development
 - Secure Authentication & Authorization
 - Maintainable and Scalable Codebase
+
+These principles ensure that the project remains maintainable, extensible, and suitable for real-world backend applications.
 # ✨ Features
 
 TalentFlow Backend provides a complete backend foundation for a modern recruitment platform.
@@ -582,6 +584,8 @@ Swagger
 http://localhost:8000/docs
 ```
 
+
+
 ReDoc
 
 ```
@@ -645,7 +649,7 @@ The project follows modern backend engineering practices.
 
 # Engineering Highlights
 
-This project demonstrates practical backend engineering experience with:
+This backend includes practical implementation of:
 
 - FastAPI
 - Async SQLAlchemy
@@ -661,15 +665,14 @@ This project demonstrates practical backend engineering experience with:
 
 **Fatemeh Ghodsi**
 
-   
-[Email]fghodsi92@gmail.com
+📧 **Email**  
+mailto:fghodsi92@gmail.com
 
+💼 **LinkedIn**  
+https://www.linkedin.com/in/fatemehghodsi
 
-[LinkedIn]https://www.linkedin.com/in/fatemehghodsi
-
- 
-[GitHub]https://github.com/fatemeh-ghodsi
-
+💻 **GitHub**  
+https://github.com/fatemeh-ghodsi
 ---
 
 ⭐ If you found this project interesting, consider giving it a star.
