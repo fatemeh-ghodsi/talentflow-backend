@@ -70,7 +70,6 @@ Each role has isolated permissions to ensure secure access to system resources.
 
 - Company Profile
 - Company Information
-- Company Logo Upload
 - Recruiter Assignment
 
 ---
