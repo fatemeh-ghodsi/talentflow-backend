@@ -609,22 +609,6 @@ docker compose down
 
 ---
 
-# Development Practices
-
-The project follows modern backend engineering practices.
-
-- Clean Architecture
-- Repository Pattern
-- Service Layer
-- Dependency Injection
-- Async Programming
-- REST API Design
-- Environment-based Configuration
-- Database Migration with Alembic
-
----
-
-
 
 # Roadmap
 
@@ -665,10 +649,10 @@ This backend includes practical implementation of:
 **Fatemeh Ghodsi**
 
 📧 **Email**  
-mailto:fghodsi92@gmail.com
+<fghodsi92@gmail.com>
 
 💼 **LinkedIn**  
-https://www.linkedin.com/in/fatemehghodsi
+https://www.linkedin.com/in/fatodsi/
 
 💻 **GitHub**  
 https://github.com/fatemeh-ghodsi
